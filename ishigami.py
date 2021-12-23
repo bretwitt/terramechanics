@@ -14,18 +14,18 @@ r = 0.09  # Wheel radius
 b = 0.11  # Wheel width
 
 # Soil Constants
-c = 0.8 * 1000  #
-phi = np.deg2rad(90 - 37.2)  #
-X_c = np.deg2rad(26.4)  #
-k_c = 1.37 * (10 ** 3)  #
-k_phi = 8.14 * (10 ** 5)  #
-n = 1.00  #
+c = 0.8 * 1000  # Cohesion stress
+phi = np.deg2rad(37.2)  # Friction angle
+X_c = np.deg2rad(26.4)  # Soil distractive angle
+k_c = 1.37 * (10 ** 3)  # Pressure-sinkage module
+k_phi = 8.14 * (10 ** 5)  # Pressure-sinkage module
+n = 1.00  # Sinkage exponent
 a_0 = 0.40  #
 a_1 = 0.15  #
-rho_d = 1.6 * (10 ** 3)  #
-l_s = 0.9 #
-k_x = 0.043 * beta + 0.036  #
-k_y = 0.020 * beta + 0.013  #
+rho_d = 1.6 * (10 ** 3)  # Soil density
+l_s = 0.9 # Wheel sinkage ratio
+k_x = 0.043 * beta + 0.036  # Soil deformation module
+k_y = 0.020 * beta + 0.013  # Soil deformation module
 
 
 def get_static_behavior():
